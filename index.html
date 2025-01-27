@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indice</title>
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // Esto lo agregué para importar las fuentes de Google Fonts y ponerlas como preestablecidos en la configuración de Tailwind
+        tailwind.config = {
+          theme: {
+            extend: {
+                colors:{
+                    moradito: '#5e5491',
+                    morado_suave: '#d2c7ff'
+                },
+              fontFamily: {
+                concert_one: ['Concert One', 'sans-serif'],
+                Shantell_sans: ['Shantell Sans', 'sans-serif'],
+              },
+            },
+          },
+        };
+      </script>
+</head>
+<body class="bg-violet-50">
+    <header class="bg-violet-300">
+        <h1 class="text-2xl sm:text-4xl lg:text-6xl font-bold text-center p-4 font-concert_one text-zinc-700">
+            ✦.── Desarrollo web II ──.✦</h1>
+    </header>
+    <section class="p-3">
+        <h2 class="font-Shantell_sans text-2xl lg:text-4xl p-4 font-bold text-moradito">Nataly Larisa Ponce Quijano - 20235782</h2>
+    </section>
+
+    <section class="font-concert_one px-20">
+        <h1 class="font-Shantell_sans py-5 text-center text-2xl sm:text-3xl md:text-4xl font-bold text-neutral-700">Guías semanales</h1>
+        
+        <div class="flex flex-wrap justify-center gap-4 text-xl md:text-2xl p-2 text-neutral-700">
+            <article class="border-2 border-black w-full sm:w-1/2 lg:w-2/5 rounded-3xl text-center p-4 bg-violet-200 m-auto">
+                <h2 class="text-moradito  text-2xl text-3xl">Guía 1</h2>
+                <p>En la primera guía de la materia de desarrollo web II se pretende evaluar el uso que el estudiante le da al FrameWork Tailwind CSS para estilizar páginas web.</p>
+                <ul class="p-3">
+                    <li class="hover:text-2xl hover:text-moradito p-2 lg:hover:text-3xl"><a href="Guia1_20235782/pricing-card/pricing.html">Tarjetas de precios</a></li>
+                    <li class="hover:text-2xl hover:text-moradito p-2 lg:hover:text-3xl"><a href="Guia1_20235782/producto/producto.html">Producto</a></li>
+                    <li class="hover:text-2xl hover:text-moradito p-2 lg:hover:text-3xl"><a href="Guia1_20235782/galeria/galeria.html">Galería de imágenes</a></li>
+                    <li class="hover:text-2xl hover:text-moradito p-2 lg:hover:text-3xl"><a href="Guia1_20235782/login/login.html">Formulario de inicio de sesión</a></li>
+                    <li class="hover:text-2xl hover:text-moradito p-2 lg:hover:text-3xl"><a href="Guia1_20235782/clipboard/index.html">Clipboard Landing Page</a></li>
+                    <li class="hover:text-2xl hover:text-moradito p-2 lg:hover:text-3xl"><a href="Guia1_20235782/ejercicio/pagina.html">Ejercicio extra</a></li>
+                </ul>
+            </article>
+            
+        </div>
+    </section>
+</body>
+</html>

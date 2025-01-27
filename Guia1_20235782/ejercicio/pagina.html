@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Everything everywhere all at once</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barriecito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // Esto lo agregué para importar las fuentes de Google Fonts y ponerlas como preestablecidos en la configuración de Tailwind. A su vez, le meti los breakpoints solicitados
+        tailwind.config = {
+            theme:
+            {
+                screens: {
+                    sm: '480px',
+                    md: '699px',
+                    lg: '976px',
+                },
+                extend: {
+                    colors: {
+                    },
+                    fontFamily: {
+                        bebas: ['Bebas Neue', 'serif'],
+                        shadows: ['Shadows Into Light', 'serif'],
+                        cursiva: ['Cedarville Cursive', 'serif'],
+                        lexend: ['Lexend Giga', 'serif'],
+                        barriecito: ['Barriecito', 'serif'],
+                        karla: ['Karla', 'serif']
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body class="bg-zinc-200">
+    <header
+        class="bg-[url('https://i.pinimg.com/736x/51/52/96/515296182722c8aecee825dc63c8838e.jpg')] bg-center h-64 flex items-center justify-center bg-scroll relative">
+        <div class="absolute inset-0 bg-gradient-to-r from-black/50 via-transparent to-black/50"></div>
+        <!--Gradiente para que se mire más el titulo de nothing matters. Me tarde media hora poniendolo :(-->
+        <h1 class="font-bebas text-red-800 text-5xl font-bold md:text-7xl lg:text-8xl z-10 m-auto block ">NOTHING
+            MATTERS</h1>
+    </header>
+    <nav class="sticky top-0 bg-zinc-900 text-white text-center font-shadows text-2xl px-1 py-3 md:text-4xl lg:px-5 ">
+        <span class="p-1 hover:text-3xl hover:font-bold lg:px-3 md:hover:text-5xl">
+            <a href="#Historia">Sinopsis</a>
+        </span>
+        <span class="p-1 hover:text-3xl hover:font-bold lg:px-3 md:hover:text-5xl">
+            <a href="#Personajes">Personajes</a>
+        </span>
+        <span class="p- hover:text-3xl hover:font-bold lg:px-3 md:hover:text-5xl">
+            <a href="#quotes">Quotes</a>
+        </span>
+        <span class="p-1 hover:text-3xl hover:font-bold lg:px-3 md:hover:text-5xl">
+            <a href="#opinion">Opinión</a>
+        </span>
+    </nav>
+
+    <section id="Historia">
+        <article class="md:flex items-center gap-4 px-6 py-4 lg:py-6">
+            <h1 class="py-4 px-6 text-4xl md:text-3xl lg:text-7xl lg:px-20"><span
+                    class="font-lexend p-2 block">Everything</span> <span
+                    class="font-cursiva p-2 block">Everywhere</span> <span class="font-bebas p-2">All at once</span>
+            </h1>
+            <img src="../images/roca.png" alt="Roca de la pelicula"
+                class="max-w-full md:max-w-2xl w-auto h-auto p-1 md:p-3 lg:p-6">
+        </article>
+        <p class="mr-10 ml-10 mb-4 text-xl font-karla text-justify md:text-2xl lg:mr-20 lg:ml-20 lg:text-3xl">La
+            película apertura mostrandonos la
+            vida de Evelyn, una mujer asiatica de mediana edad que es dueña de una tintorería. Nos muestra sus
+            frustraciones principales: su matrimonio, la relación fallida con su hija, la decepción de sus padres,
+            los obstaculos de su negocio, etc. Nos metemos en la piel de Evelyn y comprendemos su deseo de cambiar de
+            vida, ser alguien más. Sin embargo, su vida da un giro inesperado cuando descubre que es la clave para
+            salvar el multiverso. Guiada por una versión
+            alternativa de su esposo, Evelyn salta entre universos paralelos, explorando vidas que pudo haber tenido
+            mientras enfrenta una amenaza cósmica. En su travesía, encuentra respuestas sobre el amor, la familia y el
+            significado de su propia existencia.
+        </p>
+    </section>
+    <section id="Personajes" class="bg-zinc-300 w-full">
+        <h1
+            class="font-lexend block py-4 px-6 text-4xl md:text-3xl lg:text-6xl lg:px-20 md:py-9 md:text-right text-center">
+            Personajes principales</h1>
+        <article class="md:flex items-start gap-4 px-6 py-4 lg:py-6">
+            <div class="bg-zinc-200 rounded-3xl p-6 text-center border-2 border-black border-dotted m-4 md:m-1">
+                <img src="../images/evelyn.jpg" alt="Evelyn" class="rounded-full w-40 block m-auto p-2">
+                <h2 class="font-shadows text-4xl p-3">Evelyn Wang</h2>
+                <p class="text-justify text-1xl font-karla md:text-1xl lg:text-2xl">
+                    Es una mujer que lucha por manejar
+                    su lavandería, su familia disfuncional y una
+                    auditoría fiscal. Su vida da un giro inesperado cuando descubre que es clave para salvar el
+                    multiverso, enfrentándose a versiones alternativas de sí misma mientras explora sus decisiones de
+                    vida y su relación con los demás.</p>
+            </div>
+
+            <div class="bg-zinc-200 rounded-3xl p-6 text-center border-2 border-black border-dotted m-4 md:m-1">
+                <img src="../images/Waymond.jpg" alt="Waymond" class="rounded-full w-40 block m-auto p-2">
+                <h2 class="font-shadows text-4xl p-3">Waymond Wang</h2>
+                <p class="text-justify text-1xl font-karla md:text-1xl lg:text-2xl">
+                    Waymond Wang, esposo de Evelyn, es un hombre amable y optimista que enfrenta el caos con empatía y
+                    bondad. Su amor y resiliencia lo convierten en el corazón de la familia y un pilar en el multiverso.
+                </p>
+            </div>
+
+            <div class="bg-zinc-200 rounded-3xl p-6 text-center border-2 border-black border-dotted m-4 md:m-1">
+                <img src="../images/jobu.jpg" alt="Jobu" class="rounded-full w-40 block m-auto p-2">
+                <h2 class="font-shadows text-4xl p-3">Joy Wang</h2>
+                <p class="text-justify text-1xl font-karla md:text-1xl lg:text-2xl">
+                    Joy Wang, hija de Evelyn y Waymond, es una joven que lucha por encontrar
+                    su identidad y sentirse comprendida en su familia. Aunque mantiene una relación tensa con su madre,
+                    su conexión con el caos del multiverso la transforma en Jobu Tupaki, una entidad que desafía la
+                    realidad.
+                </p>
+            </div>
+        </article>
+    </section>
+
+    <section id="quotes" class="bg-zinc-400">
+        <h1 class="font-cursiva pt-4 block px-20 text-6xl lg:px-18 md:pt-7 md:text-left text-center lg:text-7xl">
+            Quotes
+        </h1>
+        <article class="md:flex items-center gap-2 px-6">
+            <div class="font-karla text-1xl p-2 md:text-2xl">
+                <p class="bg-zinc-300 p-5 rounded-3xl m-4 border-2 border-black">'You are not unlovable. There is always
+                    something to love. Even in a stupid, stupid universe where we
+                    have hot dogs for fingers, we get very good with our feet'. <span class="font-cursiva">-Evelyn
+                        Wang</span></p>
+                <p class="bg-zinc-300 p-5 rounded-3xl m-4 border-2 border-black">'The only thing I do know... is that we
+                    have to be kind. Please, be kind - especially when we don't
+                    know what's going on'. <span class="font-cursiva">-Waymond Wang</span></p>
+                <p class="bg-zinc-300 p-5 rounded-3xl m-4  border-2 border-black">'I wasn't looking for you so I could
+                    kill you. I was just looking for someone who could see what I
+                    see, feel what I feel'. <span class="font-cursiva">-Jobu Tupaki</span></p>
+                <p class="bg-zinc-300 p-5 rounded-3xl m-4 border-2 border-black">'I Would Have Really Liked Just Doing
+                    Laundry And Taxes With You'. <span class="font-cursiva">-Waymond Wang</span></p>
+            </div>
+            <img src="../images/yinyang.png" alt="Imagen de la película">
+        </article>
+    </section>
+
+    <section id="opinion" class="bg-zinc-500">
+        <h1 class="font-bebas block py-4 px-6 text-4xl md:text-5xl lg:text-7xl lg:px-20 md:py-9 text-center">
+            opinion
+        </h1>
+        <article class="lg:flex items-center gap-4 px-6 py-4 lg:py-6">
+            <img src="../images/donut.gif" alt="donut" class="rounded-3xl block m-auto">
+            <p class="mr-7 ml-7 p-4 text-xl font-karla text-justify md:text-2xl lg:mr-20 lg:ml-20 lg:text-3xl">Considero
+                que es una de las mejores películas de la última decada. No hay palabras que puedan
+                resumir la grandeza del filme o si quiera acercarse a describir la experiencia que se vive al verla por
+                primera vez. Nos da grandes lecciones sobre apreciar la ambiguedad que representa la vida, la fortaleza
+                de ser permanecer amable, apreciar a los que tenemos en nuestro alrededor y escoger nuestra mejor vida.
+            </p>
+        </article>
+    </section>
+
+    <footer class="bg-zinc-900">
+        <p class="text-white p-3 font-shadows text-center text-2xl">Hecho por Nataly Ponce</p>
+    </footer>
+</body>
+
+</html>
